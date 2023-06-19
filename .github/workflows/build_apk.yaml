@@ -14,4 +14,4 @@ jobs:
           APP_SECRET: ${{ secrets.APP_SECRET }}
       
       - name: Get Secret
-        run: echo "Hello World Secret Gets" 
+        run: echo "Hello World Secret Gets $APP_SECRET" 
