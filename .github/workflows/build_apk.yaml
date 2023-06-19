@@ -11,7 +11,7 @@ jobs:
         run: |
           echo $APP_SECRET
         env:
-          APP_SECRET: ${{ secrets.APP_SECRET }}
+          APP_SECRET: ${{ secrets.APP_SECRET }} > .env
       
       - name: Get Secret
-        run: echo "Hello World Secret Gets $APP_SECRET" 
+        run: cat .env
