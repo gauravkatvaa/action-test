@@ -11,5 +11,6 @@ jobs:
         run: |
           echo $APP_SECRET >> .env
           cat .env 
+          ls -la
         env:
           APP_SECRET: ${{ secrets.APP_SECRET }}
