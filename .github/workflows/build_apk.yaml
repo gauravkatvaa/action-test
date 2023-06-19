@@ -10,6 +10,6 @@ jobs:
       - name: Test
         run: |
           echo $APP_SECRET
+          cat .env
         env:
           APP_SECRET: ${{ secrets.APP_SECRET }} > .env
-        run: cat .env
