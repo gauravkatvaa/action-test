@@ -12,3 +12,6 @@ jobs:
           echo $APP_SECRET
         env:
           APP_SECRET: ${{ secrets.APP_SECRET }}
+      
+      - name: Get Secret
+        run: echo "Hello World Secret Gets" 
